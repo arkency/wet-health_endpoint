@@ -1,5 +1,7 @@
 # Wet::HealthEndpoint
 
+[![Build Status](https://travis-ci.org/wetrb/wet-health_endpoint.svg?branch=master)](https://travis-ci.org/wetrb/wet-health_endpoint)
+
 Adds `/health` endpoint to Rails app so it can be monitored.
 
 ## Installation
