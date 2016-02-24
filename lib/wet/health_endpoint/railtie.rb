@@ -1,10 +1,10 @@
+require 'wet/health_endpoint/middleware'
+
 module Wet
   module HealthEndpoint
     class Railtie < Rails::Railtie
-      initializer 'health_endpoint.routes', after: :after_initialize do |app|
-        app.routes.draw do
-          get '/health', to: proc { [204, {}, ['']] }
-        end
+      initializer 'health_endpoint.routes' do |app|
+        app.middleware.use Middleware
       end
     end
   end
