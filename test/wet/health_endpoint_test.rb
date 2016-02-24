@@ -9,6 +9,8 @@ class Wet::HealthEndpointTest < Minitest::Test
   end
 
   def test_health_check_endpoint
+    Rails.application.routes.draw {}
+
     get '/health'
 
     assert_equal 204, last_response.status
