@@ -1,8 +1,6 @@
 # Wet::HealthEndpoint
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wet/health_endpoint`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Adds "/health" endpoint to Rails app so it can be monitored.
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ curl -I http://example.com/health
+HTTP/1.1 204 No Content
+Cache-Control: no-cache
+X-Request-Id: 89d3c0c8-0b5c-421b-83a1-757dd04fef30
+X-Runtime: 0.000578
+Connection: close
+```
+
 
 ## Development
 
@@ -32,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wet-health_endpoint.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wetrb/wet-health_endpoint.
 
 
 ## License
