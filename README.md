@@ -1,6 +1,6 @@
 # Wet::HealthEndpoint
 
-Adds "/health" endpoint to Rails app so it can be monitored.
+Adds `/health` endpoint to Rails app so it can be monitored.
 
 ## Installation
 
