@@ -1,11 +1,18 @@
 require 'test_helper'
+require 'rack/test'
 
 class Wet::HealthEndpointTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Wet::HealthEndpoint::VERSION
+  include Rack::Test::Methods
+
+  def app
+    Rails.application
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_health_check_endpoint
+    get '/health'
+
+    assert_equal 204, last_response.status
+    assert_equal '',  last_response.body
   end
 end
+
