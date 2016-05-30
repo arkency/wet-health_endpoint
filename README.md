@@ -38,10 +38,16 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/wetrb/wet-health_endpoint.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/arkency/wet-health_endpoint.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## About
+
+<img src="http://arkency.com/images/arkency.png" alt="Arkency" width="20%" align="left" />
+
+Health Endpoint is funded and maintained by Arkency. Check out our other [open-source projects](https://github.com/arkency).
+
+You can also [hire us](http://arkency.com) or [read our blog](http://blog.arkency.com).
