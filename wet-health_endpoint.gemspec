@@ -6,11 +6,11 @@ require 'wet/health_endpoint/version'
 Gem::Specification.new do |spec|
   spec.name          = "wet-health_endpoint"
   spec.version       = Wet::HealthEndpoint::VERSION
-  spec.authors       = ["Szymon Fiedler"]
-  spec.email         = ["fidelski@gmail.com"]
+  spec.authors       = ["Arkency"]
+  spec.email         = ["dev@arkency.com"]
 
   spec.summary       = %q{Adds "/health" endpoint to Rails app so it can be monitored}
-  spec.homepage      = "https://github.com/wetrb/wet-health_endpoint"
+  spec.homepage      = "https://github.com/arkency/wet-health_endpoint"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
