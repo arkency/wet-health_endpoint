@@ -4,20 +4,18 @@ require 'rack/test'
 class Wet::HealthEndpointWithOptionsTest < Minitest::Test
   include Rack::Test::Methods
 
-  class DummyApplication < ::Rails::Application
+  APP_INSTANCE = Class.new(::Rails::Application) {
     config.eager_load = false
     config.secret_key_base = SecureRandom.hex(30)
     config.health_endpoint = {status: 200, path: '/ping'}
-  end
-
-  DummyApplication.initialize!
+  }.initialize!
 
   def app
-    DummyApplication
+    APP_INSTANCE
   end
 
   def test_health_check_endpoint
-    app.routes.draw {}
+    app.routes.clear!
 
     get '/ping'
 
