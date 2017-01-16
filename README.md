@@ -29,6 +29,23 @@ X-Runtime: 0.000578
 Connection: close
 ```
 
+## Customize
+
+You can customize the endpoint and HTTP status:
+
+```ruby
+# config/application.rb
+module YourAppName
+  class Application < Rails::Application
+    # [...]
+
+    config.health_endpoint = {
+      status: 200,    # default: 204
+      path: '/ping'   # default: '/health'
+    }
+  end
+end
+```
 
 ## Development
 
