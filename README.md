@@ -29,6 +29,8 @@ X-Runtime: 0.000578
 Connection: close
 ```
 
+Also we've wrote a [blogpost describing example usage of this gem](https://blog.arkency.com/2016/02/the-smart-way-to-check-health-of-a-rails-app/).
+
 
 ## Development
 
