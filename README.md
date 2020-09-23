@@ -18,6 +18,25 @@ Or install it yourself as:
 
     $ gem install wet-health_endpoint
 
+### For Hanami Projects
+You can use `wet-health_endpoint` middleware for specific hanami apps. For this you need to add middleware to your hanami app config:
+
+```ruby
+# in apps/web/application.rb
+
+require 'wet/health_endpoint/middleware'
+
+module Web
+  class Application < Hanami::Application
+    configure do
+      # ...
+      middleware.use Wet::HealthEndpoint::Middleware
+      # ...
+    end
+  end
+end
+```
+
 ## Usage
 
 ```
